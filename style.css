@@ -1,7 +1,7 @@
 body
 {
     margin: 0;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 .header 
 {
@@ -21,23 +21,29 @@ body
     position: absolute;
     top: 0;
     overflow: hidden;
+    background-color: black;
     opacity: .6;
 }
 
 .header h1
 {
     font-family: "Shadows Into Light", cursive;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 70px;
     z-index: 10;
     letter-spacing: 20px;
 }
 
+.wrap-desc
+{
+    padding: 100px ;
+    background-color: rgb(40, 2, 40);
+
+}
+
 .description
 {
     display: flex;
-    padding: 100px 75px;
-    background-color: black;
 }
 
 .description, .gallery
@@ -46,7 +52,7 @@ body
     margin: 0 auto;
 }
 
-.description h2, .description p
+.description h2, .description p, .gallery, .title
 {
     color: white;
     font-family: "Outfit", sans-serif;
@@ -54,7 +60,7 @@ body
 
 .description img
 {
-    border-radius: 50px;
+    border-radius: 10px;
     box-shadow: -2px -1px 17px 5px rgba(138,222,242,0.28);
     width: 100%;
 }
@@ -65,10 +71,24 @@ body
     padding: 50px;
 }
 
-.description .about h2
+.description .about h2, .gallery .title
 {
-    color: #0bd2ff;
+    color: #f406cc;
     font-size: 40px;
+}
+
+.gallery .title, .gallery .trait
+{
+    width: max-content;
+    margin: 30px auto;
+}
+
+.description .about .trait, .gallery .trait
+{
+    height: 2px;
+    width: 80px;
+    background-color: #f406cc;
+    margin-bottom: 40px;
 }
 
 .description .desc-img
@@ -85,8 +105,15 @@ body
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     height: 100vh;
+    padding-top: 50px;
 }
-    
+
+.gallery
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}   
+
 .gallery img 
 {
     width: 100%;

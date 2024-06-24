@@ -11,24 +11,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/scrollreveal@4"></script>
 </head>
 <body>
     <div class="header">
-        <h1>ANTANANARIVO</h1>
+        <h1 class="big-title">ANTANANARIVO</h1>
     </div>
     <div class="mask"></div>
-    <div class="description">
-        <div class="about">
-            <h2> A propos</h2>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
-            </p>
+    <div class="wrap-desc">
+        <div class="description">
+            <div class="about">
+                <h2> A propos</h2>
+                <div class="trait"></div>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                </p>
+            </div>
+            <div class="desc-img">
+                <img src="img/kianja.webp" alt="">
+            </div>
         </div>
-        <div class="desc-img">
-            <img src="img/kianja.webp" alt="">
+        <div class="description">
+            <div class="desc-img">
+                <img src="img/kianja.webp" alt="">
+            </div>
+            <div class="about">
+                <h2> A propos</h2>
+                <div class="trait"></div>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                </p>
+            </div>
         </div>
     </div>
     <div class="gallery">
+        <h2 class="title">Galerie</h2>
+        <div class="trait"></div>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+        </p>
         <div class="parent">
             <div class="div1">
                 <h2 class="capitale">La capitale</h2>
@@ -50,5 +71,13 @@
             </div>
         </div>
     </div>
+    <!-- <div>
+        <a href="tamatave.html">tamatave</a>
+    </div> -->
+    <script>
+		ScrollReveal().reveal('.description', {delay: 500});
+		ScrollReveal().reveal('.gallery', {delay: 500});
+
+	</script>
 </body>
 </html>
